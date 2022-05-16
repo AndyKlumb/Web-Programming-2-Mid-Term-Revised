@@ -1,0 +1,8 @@
+<h2>Current Troopers</h2>
+<ul class="troopers">
+  <li *ngFor="let trooper of troopers">
+    <a routerLink="/detail/{{trooper.id}}">
+      <span class="badge">{{trooper.id}}</span> {{trooper.name}}
+    </a>
+  </li>
+</ul>
